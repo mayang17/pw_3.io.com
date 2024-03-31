@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="styles/PW3.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Konversi Suhu</h2>
+        <input type="text" name="tempInput" id="tempInput" onkeyup="convert()" placeholder=" masukkan nilai suhu">
+    
+        <select name="tempFrom" id="tempFrom" onchange="onChange()">
+            <option value="celcius">Celcius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="reamur">Reamur</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+    
+        <select name="tempTo" id="tempTo" onchange="onChange()">
+            <option value="celcius">Celcius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="reamur">Reamur</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+    
+        <input type="text" name="tempResult" id="tempResult" placeholder="Hasil konversi" readonly>
+        <form>
+            <h4>Ubah Warna Latar Belakang</h4>
+            <input type="text" name="bg-color" placeholder="masukkan kode/nama warna (#ea971a/orange)" id="bg-color">
+            <button id="btn" type="submit">Change</button>
+        </form>
+    </div>
+    
+
+
+    <script src="PW3.js"></script>
+</body>
+</html>
